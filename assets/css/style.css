@@ -32,12 +32,38 @@ a{
     padding: 10px;
 }
 
+#protfolio{
+    background-color: rgb(143, 143, 143);
+    padding: 200px;
+}
+
+.section-contacto{
+    display: flex;
+    color: rgb(22, 21, 21);
+    text-align: center;
+    background-color: rgb(242, 243, 239);
+    justify-content: space-between;
+    
+}
+
+.div-social{
+    background-color: yellowgreen;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.div-social a{
+    width: 100%;
+}
+
 footer{
     position: absolute;
     background-color: black;
     color: white;
     padding: 30px;
-    bottom: 0px;
     width:100%;
     text-align: center;
 }

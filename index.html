@@ -18,20 +18,20 @@
             <nav>
                 <ul class="menu">
                     <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>                  
+                    <li><a href="">ABOUT</a></li>
                     <li><a href="">SERVICOS</a></li>
                     <li><a href="">PORTFOLIO</a></li>
-                    <li><a href="">CONTACTOS</a></li>
+                    <li><a href="#contacto">CONTACTOS</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section >
+            <section id="home">
                 <h2>HOME</h2>
             </section>
 
-            <section>
+            <section id="sobre">
                 <h2>SOBRE</h2>
             </section>
 
@@ -40,21 +40,47 @@
 
             </section>
 
-            <section>
+            <section id="protfolio">
                 <h2>PORTFOLIO</h2>
             </section>
 
-            <section>
+            <section class="section-contacto" id="contacto">
                 <h2>CONTACTOS</h2>
-                <form action="" method="post">
 
-                </form>
-
-                <div>
+                <div class="div-social">
                     <h4>Social</h4>
-                    <p>facebook</p>
-                    <p>yutube</p>
-                    <p>Instagram</p>
+
+                    <a href="http://">
+                        <img src="assets/img/facebook_icon.png" width="64">
+                        <p>facebook</p>
+                    </a>
+
+                    <a href="http://"><img src="assets/img/youtube3_icon.png" width="64">
+                        <p>yutube</p>
+                    </a>
+
+                    <a href="http://"><img src="assets/img/nstagram_icon.png" width="64">
+                        <p>
+                            <p>Instagram</p>
+                        </p>
+                    </a>
+
+                    <a href="http://"><img src="assets/img/twitter_icon.png" width="64">
+                        <p>
+                            <p>Twitter</p>
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <form action="" method="post">
+                        <p>Mensagem</p>
+                        <input type="text" placeholder="Nome">
+                        <p>Mensagem</p>
+                        <input type="email" placeholder="Email">
+                        <p>Mensagem</p>
+                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                        <input type="button" value="Enviar email">
+                    </form>
                 </div>
             </section>
         </main>
