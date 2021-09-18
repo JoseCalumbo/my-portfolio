@@ -31,3 +31,13 @@ a{
     margin-left: 15px;
     padding: 10px;
 }
+
+footer{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    bottom: 0px;
+    width:100%;
+    text-align: center;
+}
