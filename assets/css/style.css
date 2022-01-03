@@ -11,8 +11,22 @@ body{
 }
 
 a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+h1, h2{
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    width:100%;
+    text-align: center;
 }
 
 .header{
@@ -20,7 +34,7 @@ a{
     justify-content: space-between;
     padding: 25px;
     align-items: center;
-    background-color: black;
+    background-color: rgb(235, 231, 231);
 }
 
 .menu{
@@ -31,6 +45,7 @@ a{
     margin-left: 15px;
     padding: 10px;
 }
+
 
 #protfolio{
     background-color: rgb(143, 143, 143);
@@ -47,7 +62,6 @@ a{
 }
 
 .div-social{
-    background-color: yellowgreen;
     display: flex;
     height: 200px;
     flex-direction: column;
@@ -55,15 +69,15 @@ a{
     justify-content: space-around;
 }
 
-.div-social a{
+.div-social > a{
     width: 100%;
 }
 
-footer{
-    position: absolute;
-    background-color: black;
-    color: white;
-    padding: 30px;
-    width:100%;
-    text-align: center;
+.dviv-social{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100px;
+    margin: 0 auto;
+    grid-gap: 10px;
 }
+
