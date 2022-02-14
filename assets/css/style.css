@@ -1,24 +1,3 @@
-body, ul, li, p{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    font-family:'Lato', sans-serif;
-    font-size:16px
-}
-
-body{
-    background-color: darkolivegreen;
-}
-
-a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-h1, h2{
-    text-align: center;
-    margin-top: 100px;
-}
 
 footer {
     position: absolute;
@@ -32,7 +11,7 @@ footer {
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    height:70px;
     align-items: center;
     background-color: rgb(235, 231, 231);
 }
@@ -42,14 +21,19 @@ footer {
 }
 
 .menu li{
-    margin-left: 15px;
+    margin-left: 10px;
     padding: 10px;
 }
 
+.menu li a:hover{
+    color: rgb(9, 170, 245);
+    border-bottom: rgb(12, 12, 12) solid 1px;
+}
 
 #protfolio{
     background-color: rgb(143, 143, 143);
     padding: 200px;
+    color: red;
 }
 
 .section-contacto{

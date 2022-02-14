@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, ul, li, p{
+    list-style: none;
+    font-family:'Lato', sans-serif;
+    font-size:16px
+}
+
+body{
+    background-color: darkolivegreen;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+}
+
+h1, h2{
+    text-align: center;
+    margin-top: 100px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+ }
