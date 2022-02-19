@@ -32,7 +32,6 @@ footer {
 
 #protfolio{
     background-color: rgb(143, 143, 143);
-    padding: 200px;
     color: red;
 }
 
@@ -65,3 +64,22 @@ footer {
     grid-gap: 10px;
 }
 
+#fotoperfil{
+    border-radius: 100%;
+}
+
+.container-slides{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.item-slides{
+    display: none;
+}
+
+.next, .prev{
+    cursor: pointer;
+    font-size: 28px;
+    color: blue;
+}
