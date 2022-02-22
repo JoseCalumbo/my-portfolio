@@ -15,18 +15,18 @@ body, ul, li, p{
 }
 
 a{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 242, 242);
     text-decoration: none; 
+    
 }
 
 p{
     font-size: 1em;
-    color: white;
+    color: rgb(15, 15, 15);
 }
 
 h1, h2{
     text-align: center;
-    margin-top: 100px;
 }
 
 img{
@@ -36,5 +36,6 @@ img{
 
  .container{
 	margin: 0px;
-	background: #1b1d20;
+	background: #ffffff;
+    margin-top: 65px;
 }

@@ -15,10 +15,9 @@
     <div class="container">
 
         <header class="header">
-            <a href="index.html">JOSE CALUMBO</a>
+            <a class="log-titulo" href="index.html">JOSE CALUMBO</a>
             <nav>
                 <ul class="menu">
-                    <li><a href="#home">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="#servico">SERVICOS</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -28,22 +27,68 @@
         </header>
 
         <main>
-            <section>
-                <img src="assets/img/pp.png" height="160" width="160" id="fotoperfil">
-                <p>
-                    JK, sou um grande amante de tecnologia, adoro 
-                    programar resolver problema com linguagem da 
-                    maquina programacao, sou formado em desenvolvimento 
-                    de softwere <strong>moble desin</strong> e <strong>WEB desin</strong>
-                </p>
+            <section class="hero">
+                <h1>Desenvolvimento de Aplicação Web e App Mobile</h1>
+                <h3>Desenvolvimento moderno, responsivo para o seu site
+                    acessivel a qualquer tipo de dispositivo do usuario
+                </h3>
+                <div>               
+                     <a href="http://">Entrar contacto</a>
+                    </div>
+
+
             </section>
 
             <section>
                 <h2>SOBRE</h2>
+                <img src="assets/img/pp.png" height="160" width="160" id="fotoperfil">
+                <p>
+                    JK, sou um grande amante de tecnologia, adoro
+                    programar resolver problema com linguagem da
+                    maquina programacao, sou formado em desenvolvimento
+                    de softwere <strong>moble desin</strong> e <strong>WEB desin</strong>
+                </p>
             </section>
+
 
             <section id="servico">
                 <h2>SERVIÇOS</h2>
+
+                <article>
+                    <img src="assets/img/github_icon.png" alt="" srcset="">
+                    <h2> WEB DESIGN E MOBILE</h2>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quam sit voluptates similique
+                        ex fugiat molestiae dolorum minima, a ab corporis
+                        rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
+                </article>
+
+                <article>
+                    <img src="assets/img/github_icon.png">
+                    <h2>ANALISE DE SOFTWERE</h2>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quam sit voluptates similique
+                        ex fugiat molestiae dolorum minima, a ab corporis
+                        rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
+                </article>
+
+                <article>
+                    <img src="assets/img/github_icon.png">
+                    <h2>GERENCIAMENTO DE CONTEUDO</h2>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quam sit voluptates similique
+                        ex fugiat molestiae dolorum minima, a ab corporis
+                        rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
+                </article>
+
+                <article>
+                    <img src="assets/img/github_icon.png">
+                    <h2>DESENVOLVIMENTO FRONT-END</h2>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quam sit voluptates similique
+                        ex fugiat molestiae dolorum minima, a ab corporis
+                        rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
+                </article>
+
+                <a href="http://">Saber Mais</a>
+
+
 
             </section>
 
@@ -89,28 +134,29 @@
             </section>
 
             <section class="container-slides">
-                
-                <div class="item-slides slides1" >
+
+                <div class="item-slides slides1">
                     <img src="assets/img/meuambiente.png" alt="" width="1411" height="700">
                     <a href=""></a>
                 </div>
 
-                <div class="item-slides slides2" >
+                <div class="item-slides slides2">
                     <img src="assets/img/meuambiente.png" alt="" width="1411" height="700">
                 </div>
 
-                <div class="item-slides slides3" >
+                <div class="item-slides slides3">
                     <img src="assets/img/meuambiente.png" alt="" width="1411" height="700">
                 </div>
-                <a class="prev" href="">&#10094</a>
-                <a class="next" href="">&#10095</a>
+                <span class="prev" onclick="clicar">&#10094</span>
+                <span class="next" onclick="click" href="">&#10095</span>
+
             </section>
         </main>
 
         <footer>
             <div>Copyright © 2021 | Jose Calumbo</div>
         </footer>
-
+        <script src="assets/js/script.js"></script>
     </div>
 </body>
 

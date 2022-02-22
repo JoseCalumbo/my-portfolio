@@ -2,18 +2,28 @@
 footer {
     position: absolute;
     background-color: black;
-    color: white;
+    color: rgb(245, 245, 245);
     padding: 30px;
     width:100%;
     text-align: center;
 }
 
 .header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height:65px;
     display: flex;
     justify-content: space-between;
-    height:70px;
     align-items: center;
-    background-color: rgb(235, 231, 231);
+    color: white;
+    background-color: rgb(3, 4, 82);
+    border-bottom: rgb(131, 126, 125) 1px solid;
+}
+
+.log-titulo{
+    margin-left: 80px;
+    font-size: 18pt;
 }
 
 .menu{
@@ -21,13 +31,44 @@ footer {
 }
 
 .menu li{
+    font-size: 13pt;
     margin-left: 10px;
     padding: 10px;
 }
 
 .menu li a:hover{
-    color: rgb(9, 170, 245);
+    color: rgb(234, 0, 255);
     border-bottom: rgb(12, 12, 12) solid 1px;
+}
+
+.hero{
+    background-image: url(../img/vai2.png);
+    min-height: 125vh;
+    background-size: cover;
+    color: rgb(12, 14, 160);
+    justify-items: center;
+}
+
+.hero h1{
+    font-size: 30pt;
+    color: rgb(27, 27, 27);
+}
+
+.hero h3{
+    width: 600px;
+    font-size: 20pt;
+    color: rgb(245, 6, 6);
+}
+
+.hero div{
+    text-align: center;
+    height: 70px;
+    width: 230px;
+    border-radius: 40%;
+    padding: 20px;
+    background-color: blue;
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
 }
 
 #protfolio{
@@ -81,5 +122,9 @@ footer {
 .next, .prev{
     cursor: pointer;
     font-size: 28px;
-    color: blue;
+    color: hsla(0, 0%, 89%, 0.452);
+}
+
+.next:hover, .prev:hover{
+    color: rgb(216, 125, 125);
 }
