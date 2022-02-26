@@ -32,6 +32,7 @@ footer {
 
 .menu li{
     font-size: 13pt;
+    font-weight: bolder;
     margin-left: 10px;
     padding: 10px;
 }
