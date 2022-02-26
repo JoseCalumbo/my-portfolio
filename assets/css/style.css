@@ -42,8 +42,8 @@ footer {
 }
 
 .hero{
-    background-image: url(../img/vai2.png);
-    min-height: 125vh;
+    background-image: url(../img/hero.png);
+    min-height: 800px;
     background-size: cover;
     color: rgb(12, 14, 160);
     justify-content: start;
@@ -54,7 +54,7 @@ footer {
 
 .hero h1{
     font-size: 3rem;
-    color: rgb(66, 61, 61);
+    color: rgb(4, 19, 46);
     margin:20px;
 
 }
@@ -62,7 +62,7 @@ footer {
 .hero h3{
     width: 900px;
     font-size: 2rem;
-    color: rgb(66, 61, 61);
+    color: rgba(255, 255, 255, 0.952);
     margin-bottom: 10px;
 }
 
@@ -74,12 +74,30 @@ footer {
     font-size: 12pt;
     color: rgb(66, 61, 61);
     text-transform: uppercase;
+    justify-items: start;
 }
 
 .hero a:hover{
     color: rgb(66, 61, 61);
     background-color: rgb(242, 243, 239);
 }
+
+#servico .item{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+}
+
+#servico section{
+    margin: 0px;
+}
+
+#servico h1{
+align-items: flex-end;
+margin-bottom: 40px;
+}
+
+
 
 #protfolio{
     background-color: rgb(255, 254, 254);
