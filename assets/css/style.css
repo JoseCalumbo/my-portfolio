@@ -15,6 +15,7 @@ footer {
     height:65px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     color: white;
     background-color: rgb(3, 4, 82);
@@ -40,6 +41,7 @@ footer {
 .menu li a:hover{
     color: rgb(234, 0, 255);
     border-bottom: rgb(12, 12, 12) solid 1px;
+    transition: 2s ease;
 }
 
 .hero{
@@ -63,30 +65,44 @@ footer {
 .hero h3{
     width: 900px;
     font-size: 2rem;
-    color: rgba(255, 255, 255, 0.952);
+    color: rgba(4, 19, 46);
     margin-bottom: 10px;
+    text-align: end;
 }
 
 .hero a{
-    border-radius: 4px;
-    border: rgb(218, 214, 214) solid 0.5px;
+    border-radius: 28px;
+    border: rgba(218, 214, 214, 0.37) solid 0.5px;
     padding: 20px 50px;
-    background-color: rgba(255, 255, 255, 0.514);
+    background-color: rgba(255, 255, 255, 0.267);
     font-size: 12pt;
     color: rgb(66, 61, 61);
-    text-transform: uppercase;
     justify-items: start;
+    font-weight: bold;
 }
 
 .hero a:hover{
-    color: rgb(66, 61, 61);
-    background-color: rgb(242, 243, 239);
+    background-color: rgba(231, 229, 229, 0.815);
+    transition: 2s ease;
+    color: rgb(12, 11, 11);
+}
+
+.an{
+    color: blue;
+    transition: 2s;
 }
 
 #servico .item{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 1fr;
+    display: flex;
+    background-color: rgba(177, 177, 202, 0.973);
+    height: 350px;
+    width: 100%;
+}
+
+#servico .item article{
+    color: rgb(15, 113, 241);
+    width: 900px;
+    border: rgb(12, 12, 12) 1px solid;
 }
 
 #servico section{
@@ -97,8 +113,6 @@ footer {
 align-items: flex-end;
 margin-bottom: 40px;
 }
-
-
 
 #protfolio{
     background-color: rgb(255, 254, 254);
@@ -139,21 +153,27 @@ margin-bottom: 40px;
 }
 
 .container-slides{
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
 
 .item-slides{
     display: none;
+    transition: 1s all;
+
 }
 
 .next, .prev{
+    margin-top: 20px;
+    padding: 0px 20px;
     cursor: pointer;
     font-size: 28px;
-    color: hsla(0, 0%, 89%, 0.452);
+    color: hsla(0, 4%, 5%, 0.863);
 }
 
 .next:hover, .prev:hover{
-    color: rgb(216, 125, 125);
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: rgb(240, 228, 228);
 }

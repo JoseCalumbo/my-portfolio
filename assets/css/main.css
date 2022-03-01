@@ -17,13 +17,7 @@ body, ul, li, p{
 a{
     color: rgb(228, 220, 220);
     text-decoration: none; 
-    cursor: pointer;
-    
-}
-
-p{
-    font-size: 1em;
-    color: rgb(15, 15, 15);
+    cursor: pointer; 
 }
 
 h1, h2{
@@ -41,6 +35,7 @@ img{
 	background: #ffffff;
     margin-top: 65px;
     max-width: 100%;
+    text-align: center;
 }
 
 .container section{
