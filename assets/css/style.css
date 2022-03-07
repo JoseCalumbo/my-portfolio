@@ -9,6 +9,7 @@ footer {
 }
 
 .header{
+    z-index: 2;
     position: fixed;
     width: 100%;
     top: 0;
@@ -18,7 +19,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     color: white;
-    background-color: rgb(3, 4, 82);
+    background-color: #530ab3;
     border-bottom: rgb(131, 126, 125) 1px solid;
 }
 
@@ -53,6 +54,7 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
+
 }
 
 .hero h1{
@@ -84,34 +86,36 @@ footer {
 .hero a:hover{
     background-color: rgba(231, 229, 229, 0.815);
     transition: 2s ease;
-    color: rgb(12, 11, 11);
+    color: rgb(0, 0, 0);
 }
 
-.an{
-    color: blue;
-    transition: 2s;
+#servico{
+    position: relative;
+    max-width: 1300px;
+    margin: auto;
 }
 
 #servico .item{
     display: flex;
     background-color: rgba(177, 177, 202, 0.973);
-    height: 350px;
+    height: 450px;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
 }
 
-#servico .item article{
-    color: rgb(15, 113, 241);
-    width: 900px;
-    border: rgb(12, 12, 12) 1px solid;
-}
-
-#servico section{
-    margin: 0px;
-}
-
-#servico h1{
-align-items: flex-end;
-margin-bottom: 40px;
+.item article{
+    display: inline-block;
+    background: rgba(104, 102, 102, 0.267);
+  min-width: 200px;
+  height: 400px;
+  margin-right: 1rem
 }
 
 #protfolio{
@@ -156,6 +160,7 @@ margin-bottom: 40px;
     max-width: 100%;
     position: relative;
     margin: auto;
+    
 }
 
 .item-slides{
@@ -166,14 +171,29 @@ margin-bottom: 40px;
 
 .next, .prev{
     margin-top: 20px;
-    padding: 0px 20px;
+    padding: 22px;
     cursor: pointer;
+    top: 50%;
+    width: auto;
     font-size: 28px;
-    color: hsla(0, 4%, 5%, 0.863);
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.863);
+    user-select: none;
+    position: absolute;
+    margin-top: -22px;
+    
 }
 
+.next{
+    right: 0;
+}
+.prev{
+    left: 0;
+}
+
+
 .next:hover, .prev:hover{
-    transition: 0.5s;
+    transition: 0.5s ease;
     background-color: rgba(0, 0, 0, 0.658);
     color: rgb(240, 228, 228);
 }
