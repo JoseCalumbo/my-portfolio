@@ -21,7 +21,7 @@ function showSlides(){
 
       slides[inicio-1].style.display ="block";
 
-      console.log(slides[inicio-1]);
+     // console.log(slides[inicio-1]);
 
       setTimeout(showSlides,5500)
 

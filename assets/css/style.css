@@ -19,7 +19,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     color: white;
-    background-color: #530ab3;
+    background-color: rgb(83, 10, 179);
     border-bottom: rgb(131, 126, 125) 1px solid;
 }
 
@@ -79,14 +79,52 @@ footer {
     background-color: rgba(255, 255, 255, 0.267);
     font-size: 12pt;
     color: rgb(66, 61, 61);
-    justify-items: start;
     font-weight: bold;
 }
 
 .hero a:hover{
-    background-color: rgba(231, 229, 229, 0.815);
-    transition: 2s ease;
+    background-color: rgba(255, 245, 245, 0.877);
+    transition: 1.55s ease;
     color: rgb(0, 0, 0);
+}
+
+.sobre{
+    display: grid;
+    grid-template-columns:150px 1fr;
+    height: 360px;
+    font-size: 16pt;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.sobre div{
+    width: 600px;
+    margin-left: 0px;
+    text-align: justify;
+    margin: 30px;
+}
+
+.contactar{
+    grid-column: 2;
+    padding: 20px 50px;
+    height:60px;
+    width: 270px;
+    border-radius: 28px;
+    border: rgba(72, 7, 225) solid 2.5px;
+    background-color: rgb(242, 249, 247);
+    color: rgb(72, 7, 250);
+    font-size: 12pt;
+    font-weight: bold;
+    justify-self: start;
+    margin-bottom:20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactar:hover{
+    background-color: rgba(72, 7, 255);
+    transition: 1s ease;
+    color: rgb(255, 255, 255);
 }
 
 #servico{
@@ -105,7 +143,6 @@ footer {
     list-style: none;
     width: 100%;
     display: flex;
-    position: absolute;
     left: 0;
     transition: all 1s ease;
 }
@@ -118,41 +155,67 @@ footer {
   margin-right: 1rem
 }
 
-#protfolio{
+#portfolio{
     background-color: rgb(255, 254, 254);
-    color: red;
+    color: rgb(25, 0, 255);
 }
 
-.section-contacto{
-    display: flex;
-    color: rgb(22, 21, 21);
-    text-align: center;
-    background-color: rgb(242, 243, 239);
-    justify-content: space-between;
-    
-}
-
-.div-social{
-    display: flex;
-    height: 200px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.div-social > a{
+.portfolio-item{
+    display: inline-block;
     width: 100%;
 }
+.portfolio-item article{
+    margin: 15px;
+}
 
-.dviv-social{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 100px;
-    margin: 0 auto;
-    grid-gap: 10px;
+.portfolio-item>article:nth-child(1){
+    height: 300px;
+    width: 300px;
+    background-color: rgb(224, 29, 224);
+}
+
+.portfolio-item>article:nth-child(2){
+    height: 300px;
+    width: 300px;
+    background-color: rgb(11, 252, 119);
+}
+
+.portfolio-item>article:nth-child(3){
+    height: 300px;
+    width: 300px;
+    background-color: rgb(224, 29, 45);
+}
+
+#contacto div{
+    display: flex;
+    color: rgb(22, 21, 21);
+    background-color: rgb(242, 243, 239);
+}
+
+#contacto div p{
+    font-size: 16pt;
+}
+
+.titulo{
+    color: rgba(16, 16, 150, 0.753);
+}
+
+.button{
+    height: 50px;
+    font-size: 16pt;
+    background-color: white;
+    font-weight: bold;
+    border: 2.5px solid rgb(71, 7, 255);
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(71, 7, 255);
+    color:white;
 }
 
 #fotoperfil{
+    margin-left: 10px;
     border-radius: 100%;
 }
 
