@@ -78,7 +78,7 @@ footer {
     padding: 20px 50px;
     background-color: rgba(255, 255, 255, 0.267);
     font-size: 12pt;
-    color: rgb(66, 61, 61);
+    color: rgb(31, 7, 253);
     font-weight: bold;
 }
 
@@ -110,14 +110,13 @@ footer {
     height:60px;
     width: 270px;
     border-radius: 28px;
-    border: rgba(72, 7, 225) solid 2.5px;
-    background-color: rgb(242, 249, 247);
+    border: rgba(72, 7, 225) solid 2px;
+    background-color: rgb(255, 255, 255);
     color: rgb(72, 7, 250);
     font-size: 12pt;
     font-weight: bold;
     justify-self: start;
     margin-bottom:20px;
-    justify-content: center;
     text-align: center;
 }
 
@@ -133,57 +132,51 @@ footer {
     margin: auto;
 }
 
-#servico .item{
+.container-servico{
     display: flex;
     background-color: rgba(177, 177, 202, 0.973);
     height: 450px;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-    display: flex;
     left: 0;
     transition: all 1s ease;
 }
 
-.item article{
-    display: inline-block;
+.container-servico article{
     background: rgba(104, 102, 102, 0.267);
-  min-width: 200px;
-  height: 400px;
-  margin-right: 1rem
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 60px;
 }
 
-#portfolio{
-    background-color: rgb(255, 254, 254);
-    color: rgb(25, 0, 255);
+.container-servico article h3{
+    color: blue;
 }
 
+.portfolio > div{
+    margin-top: 5px;
+    height: 450px;
+}
 .portfolio-item{
-    display: inline-block;
-    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    margin: 10px 0;
 }
-.portfolio-item article{
-    margin: 15px;
+.portfolio-item article h3,p{
+    margin: 40px 0;
 }
-
-.portfolio-item>article:nth-child(1){
-    height: 300px;
-    width: 300px;
-    background-color: rgb(224, 29, 224);
+.portfolio-item >article a{
+    border-radius: 28px;
+    border: rgba(72, 8, 248, 0.603) solid 1.5px;
+    padding: 20px 50px;
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0 10px;
+    color: rgb(71, 8, 250);
 }
-
-.portfolio-item>article:nth-child(2){
-    height: 300px;
-    width: 300px;
-    background-color: rgb(11, 252, 119);
-}
-
-.portfolio-item>article:nth-child(3){
-    height: 300px;
-    width: 300px;
-    background-color: rgb(224, 29, 45);
+.portfolio-item > article a:hover{
+    background-color: rgb(71, 7, 255);
+    color: rgb(255, 248, 248);
+    transition: 1s;
 }
 
 #contacto div{
@@ -201,17 +194,19 @@ footer {
 }
 
 .button{
+    margin-top: 11px;
     height: 50px;
     font-size: 16pt;
     background-color: white;
     font-weight: bold;
-    border: 2.5px solid rgb(71, 7, 255);
+    border: 2px solid rgb(71, 7, 255);
 }
 
 .button:hover{
     cursor: pointer;
     background-color: rgb(71, 7, 255);
     color:white;
+    transition: 1s ease;
 }
 
 #fotoperfil{
@@ -259,4 +254,12 @@ footer {
     transition: 0.5s ease;
     background-color: rgba(0, 0, 0, 0.658);
     color: rgb(240, 228, 228);
+}
+
+.animar{
+    animation: avancar 25s;
+}
+
+@keyframes avancar{
+    100%{opacity:0;}
 }

@@ -20,10 +20,11 @@ function showSlides(){
       }
 
       slides[inicio-1].style.display ="block";
+      slides[inicio-1].classList.add('animar');
 
      // console.log(slides[inicio-1]);
 
-      setTimeout(showSlides,5500)
+      setTimeout(showSlides,6900)
 
    next.addEventListener('click',function(){
          alert("ola next")
