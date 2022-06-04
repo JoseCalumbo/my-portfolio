@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inclui as arquivos slick.js-->
+    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -60,7 +65,7 @@
 
                 <h1>SERVIÇOS</h1>
 
-                <div class="container-servico">
+                <div class="carousel">
                     <article>
                         <img src="assets/img/github_icon.png" alt="" srcset="">
                         <h3> WEB DESIGN E MOBILE</h3>
@@ -108,9 +113,9 @@
                             rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
                     </article>
 
+                </div>
                     <a class="prev">&#10094</a>
                     <a class="next">&#10095</a>
-                </div>
 
             </section>
 
@@ -237,12 +242,32 @@
                 </div>
 
             </section>
+
         </main>
 
         <footer>
             <div>Copyright © 2021 | Jose Calumbo</div>
         </footer>
+
+        <!-- Inclui os arquivo JS-->
+        <script type="text/javascript" src="assets/js/slick/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="assets/js/slick/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+
         <script src="assets/js/script.js"></script>
+
+        <script type="text/javascript">
+            $('.carousel').slick({
+
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                // autoplay: true,
+                // autoplaySpeed: 900,
+                
+            });
+            </script>
     </div>
 </body>
 
