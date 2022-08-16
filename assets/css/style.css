@@ -1,13 +1,4 @@
 
-footer {
-    position: absolute;
-    background-color: black;
-    color: rgb(245, 245, 245);
-    padding: 30px;
-    width:100%;
-    text-align: center;
-}
-
 .header{
     z-index: 2;
     position: fixed;
@@ -18,26 +9,33 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border-bottom: rgba(131, 126, 125, 0.879) 1px solid;
+    
+    color: #48D978;
+
+    background-color: #181E23;
+}
+
+.menu-topo{
+    display: flex;
 }
 
 .log-titulo{
+    color: #48D978;
     margin-left: 80px;
     font-size: 18pt;
 }
 
 .menu{
     display: flex;
-    margin-right: 210px;
+    margin-right: 120px;
 }
 
 .menu li{
     font-size: 13pt;
-    font-weight: bolder;
+    font-weight: normal;
     margin-left: 10px;
     padding: 10px;
+    text-transform: normal;
 }
 
 .menu li a:hover{
@@ -260,4 +258,14 @@ footer {
 
 @keyframes avancar{
     100%{opacity:0;}
+}
+
+
+footer {
+    position: absolute;
+    background-color:#323131;
+    color: #fffdfd;
+    padding: 30px;
+    width:100%;
+    text-align: center;
 }
