@@ -25,6 +25,7 @@ a{
 
 .menu{
     display: flex;
+    margin-left: 20px;
 }
 
 .menu li{
