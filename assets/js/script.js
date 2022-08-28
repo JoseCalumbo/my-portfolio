@@ -1,42 +1,19 @@
-var inicio = 0;
-var slides = document.querySelectorAll('.item-slides')
-var tx = document.querySelector('.tx')
-var next = document.querySelector('.next')
-var prev = document.querySelector('.prev')
 
-tx.addEventListener('mouseenter',entrar)
-tx.addEventListener('mouseout',sair)
 
-showSlides();
+const card = document.querySelectorAll('[data-animar]');
 
-function showSlides(){
+const classAnime = 'anime';
 
-   for(let i=0; i < slides.length; i++){
-      slides[i].style.display = 'none';
-   }
-   inicio ++
-      if (inicio > slides.length) {
-            inicio=1
-      }
-
-      slides[inicio-1].style.display ="block";
-      slides[inicio-1].classList.add('animar');
-
-     // console.log(slides[inicio-1]);
-
-      setTimeout(showSlides,6900)
-
-   next.addEventListener('click',function(){
-         alert("ola next")
-   });
-}  
-
-function entrar(){
-      
-      tx.classList.add('an');
-      tx.innerText ='Tecnologias HTML, CSS3, Flutter, NodeJs, Linguagen Dart, JavaScript, PHP e Java'
-      }
-
-function sair(){
-      tx.innerText ='Desenvolvedor front-end, designer de experiencia, interacao,UI e UX,designs limpos e modernos';
+function animarScroll(){
+    const posicaScroll = window.pageYOffset + 500;
+    card.forEach(function(e){
+        if(posicaScroll > e.offsetTop){
+            e.classList.add(classAnime);
+        }
+        console.log(e.offsetTop);
+    })
 }
+
+window.addEventListener('scroll',function(){
+    animarScroll();
+})
