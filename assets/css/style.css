@@ -34,52 +34,10 @@
     text-transform: normal;
 }
 
-.menu li a:hover{
-    color: rgb(255, 255, 255);
-    transition: 1.5s ease;
-}
-
 .hero{
-    background-image: url(../img/hero.png);
-    min-height: 800px;
-    background-size: cover;
-    color: rgb(12, 14, 160);
+    min-height: 500px;
     justify-content: start;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.hero h1{
-    font-size: 3rem;
-    color: rgb(4, 19, 46);
-    margin:20px;
-
-}
-
-.hero h3{
-    width: 900px;
-    font-size: 2rem;
-    color: rgba(4, 19, 46);
-    margin-bottom: 10px;
-    text-align: end;
-}
-
-.hero a{
-    border-radius: 28px;
-    border: rgba(218, 214, 214, 0.37) solid 0.5px;
-    padding: 20px 50px;
-    background-color: rgba(255, 255, 255, 0.267);
-    font-size: 12pt;
-    color: rgb(31, 7, 253);
-    font-weight: bold;
-}
-
-.hero a:hover{
-    background-color: rgba(255, 245, 245, 0.877);
-    transition: 1.55s ease;
-    color: rgb(0, 0, 0);
+    align-items: start;
 }
 
 .sobre{
@@ -252,10 +210,11 @@
     animation: avancar 25s;
 }
 
+/* CSS Animação */
+
 @keyframes avancar{
     100%{opacity:0;}
 }
-
 
 footer {
     position: absolute;
@@ -264,4 +223,21 @@ footer {
     padding: 30px;
     width:100%;
     text-align: center;
+}
+
+[data-animar]{
+    opacity: 0;
+    transition: .1s;
+}
+
+[data-animar="left"]{
+    transform: translate3d(-200px , 0 ,0);
+}
+
+[data-animar="aparecer"]{
+    transform: rotate(360deg);
+}
+
+[data-animar].anime{
+    opacity: 1;
 }
