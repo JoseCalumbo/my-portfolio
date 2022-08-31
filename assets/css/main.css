@@ -8,6 +8,11 @@ html{
 	scroll-behavior: smooth;
 }
 
+p{
+    color: #0687f1;
+}
+
+
 body, ul, li, p{
     list-style: none;
     font-family:'Lato', sans-serif;

@@ -34,12 +34,6 @@
     text-transform: normal;
 }
 
-.hero{
-    min-height: 500px;
-    justify-content: start;
-    align-items: start;
-}
-
 .sobre{
     display: grid;
     grid-template-columns:150px 1fr;
@@ -190,13 +184,6 @@
     position: absolute;
     margin-top: -22px;
     
-}
-
-.next{
-    right: 0;
-}
-.prev{
-    left: 0;
 }
 
 
