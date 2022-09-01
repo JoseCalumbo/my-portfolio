@@ -1,11 +1,20 @@
+/* importe fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=IBM+Plex+Sans:ital,wght@0,500;1,700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
+body{
+    font-family: 'Pacifico';
+}
+
 html{
-	scroll-behavior: smooth;
+	scroll-behavior: smooth;  
 }
 
 p{
@@ -34,21 +43,28 @@ a{
     cursor: pointer; 
 }
 
-h1, h2{
+h1{
     font-size: 3rem;
     text-align: center;
-    color: #49da79;
+    color: #222423;
+    font-family: 'Fjalla One', sans-serif;
 }
+
+h2{
+    font-size: 3rem;
+    color: #222423;
+    font-family: 'Fjalla One', sans-serif;
+    }
 
 img{
     max-width: 100%;
     display: block;
  }
 
- .container{
-	margin: 0px;
+ .page{
+    
 	background: #ffffff;
-    margin-top: 65px;
+    margin-top: 86px;
     max-width: 100%;
     
 }
@@ -66,6 +82,6 @@ input{
 
 .texto{
     font-size: 14pt;
-    width: 60%;
+    width: 40%;
     color: #181E23;
 }
