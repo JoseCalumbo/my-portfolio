@@ -9,6 +9,10 @@
     padding: 0px;
 }
 
+b{
+    color: #49da79;
+}
+
 body{
     font-family: 'Pacifico';
 }
@@ -18,7 +22,7 @@ html{
 }
 
 p{
-    color: #000000;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -43,19 +47,6 @@ a{
     cursor: pointer; 
 }
 
-h1{
-    font-size: 3rem;
-    text-align: center;
-    color: #222423;
-    font-family: 'Fjalla One', sans-serif;
-}
-
-h2{
-    font-size: 3rem;
-    color: #222423;
-    font-family: 'Fjalla One', sans-serif;
-    }
-
 img{
     max-width: 100%;
     display: block;
@@ -64,8 +55,7 @@ img{
  .page{
     
 	background: #ffffff;
-    margin-top: 86px;
-    max-width: 100%;
+
     
 }
 
@@ -80,8 +70,3 @@ input{
     border: rgba(5, 5, 199, 0.315) solid 0.25px;
 }
 
-.texto{
-    font-size: 14pt;
-    width: 40%;
-    color: #181E23;
-}
