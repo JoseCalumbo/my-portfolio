@@ -37,7 +37,7 @@ body, ul, li, p{
 }
 
 .menu li a:hover{
-    color: #5dbf7e;
+    border-bottom: 1px solid #49da79;
     transition: 1.5s ease;
 }
 
@@ -51,18 +51,6 @@ img{
     max-width: 100%;
     display: block;
  }
-
- .page{
-    
-	background: #ffffff;
-
-    
-}
-
-.container section{
-    margin-top: 0px;
-    margin-bottom: 60px;
-}
 
 input{
     width: 500px;

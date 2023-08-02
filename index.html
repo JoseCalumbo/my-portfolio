@@ -10,7 +10,7 @@
 
     <!-- Inclui as arquivos slick.js-->
     <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css" />
 
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -19,286 +19,268 @@
 </head>
 
 <body>
-    <div class="container">
-
-        <div class="div-menu">
-            
-            <a class="log-titulo" href="index.html"> 
+     <!-- ---         START CABEÇALHO  ----------  -->
+    <nav>
+        <div class="box-logo">
+            <a class="log-titulo" href="index.html">
                 <img src="assets/img/logo.png" alt="" width="102" height="55">
             </a>
-
-            <nav class="menu-topo">
-                <ul class="menu">
-                    <li><a href="#sobremim">Sobre</a></li>
-
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contacto">Contactos</a></li>
-
-                    <li>
-                        <li>
-                            <a href="https://github.com/JoseCalumbo">
-                              <img src="assets/img/logo_github.png" alt="" width="30">  
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://">
-                              <img src="assets/img/logo_github.png" alt="" width="30">  
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://">
-                              <img src="assets/img/linkedin.png" alt="" width="30">  
-                            </a>
-                        </li>
-                    </li>
-
-                </ul>
-            </nav>
         </div>
 
-        <main class="page">
+        <div class="box-menu">
+            <ul class="menu">
+                <li class="menu-item"><a href="#sobremim">Sobre</a></li>
+                <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-item"><a href="#contacto">Contactos</a></li>
+            </ul>
+        </div>
 
-            <header class="hero">
-                <img src="assets/img/pp.png" height="140" width="140" class="hero-foto">
-                <p class="hero-titulo">Oi, Sou o José</p>
-                <p class="hero-subtitulo">Desenvolvedor em programação Web em Mobile</p>
-                <p class="hero-texto">
-                    Sou especialista em construir interface limpa fazer  faço front-end, designer de experiencia,
-                     interacao,UI e UX, <b>design</b> limpos e modernos para uma boa experencia de usuario.
-                </p>
+        <div class="box-midia">
 
-                <a class="hero-btn" href="#contacto">Saiba mais</a>
-            </header 
+            <ul class="menu-midia">
 
-            <section id="sobremim">
-                <h2>SOBRE MIM</h2>
+                <li class="menu-midia-item">
+                    <a href="https://github.com/JoseCalumbo">
+                        <img src="assets/img/logo_github.png" alt="" width="30">
+                    </a>
+                </li>
 
-                <div class="sobre">
+                <li class="menu-midia-item">
+                    <a href="http://">
+                        <img src="assets/img/logo_github.png" alt="" width="30">
+                    </a>
+                </li>
 
-                    <img src="assets/img/pp.png" height="160" width="160" id="fotoperfil">
-                    <div>
-                        <p><strong>José Calumbo</strong>, sou um desenvolvedor em front-end, black-end e moble localizado
-                        na Angola-Luanda.
-                        Sou formado em engenharia informatica, Tenho uma grande paixão em programação amante de
-                        tecnologia, adoro
-                        programar solucionador problemas, tenho sempre uma grande atenção aos detalhes na interface do
-                        usuário,
-                        animações e criação de experiencia de usuário. Pessoa bem organizada e com bom humor,
-                        interessado em trabalhar em qualquer projectos com pessoas positivas.</p>
+                <li class="menu-midia-item">
+                    <a href="http://">
+                        <img src="assets/img/linkedin.png" alt="" width="30">
+                    </a>
+                </li>
 
-                        <p><strong>Hablidades</strong></p>
-                        <p>NodeJs, HTML, CSS, Materialize, MySQLI, PHP, Flutter, Java, Javascript e Bootstrap </p>
-                    </div>
-                    <a class="contactar" href="#contacto">Contactar</a>
-                </div>
-            </section>
+                <li class="curriculo menu-midia-item"><a href="http://">CURRÍCULO</a></li>
+            </ul>
+        </div>
 
-            <section id="servico">
+    </nav>
 
-                <h1>SERVIÇOS</h1>
+    <!-- ---         START HERO  ----------  -->
+    <header class="hero">
+        <img src="assets/img/pp.png" height="140" width="140" class="hero-foto">
+        <p class="hero-titulo">Oi, Sou o José</p>
+        <p class="hero-subtitulo">Desenvolvedor em programação Web em Mobile</p>
+        <p class="hero-texto">
+            Sou especialista em construir interface limpa fazer faço front-end, designer de experiencia,
+            interacao,UI e UX, <b>design</b> limpos e modernos para uma boa experencia de usuario.
+        </p>
 
-                <div class="carousel">
-                    <article>
-                        <img src="assets/img/github_icon.png" alt="" srcset="">
-                        <h3> WEB DESIGN E MOBILE</h3>
-                        <P>Nesciunt quam sit voluptates
-                            similique
-                            ex fugiat molestiae dolorum minima, a ab corporis
-                            rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
-                    </article>
+        <a class="hero-btn" href="sobre.html">Saiba mais</a>
+    </header>
+    
+    <section id="servico">
 
+        <h1>SERVIÇOS</h1>
 
-                    <article>
-                        <img src="assets/img/github_icon.png">
-                        <h3>ANALISE DE SOFTWERE</h3>
-                        <P> Nesciunt quam sit voluptates
-                            similique
-                            ex fugiat molestiae dolorum minima, a ab corporis
-                            rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
-                    </article>
+        <div class="carousel">
+            <article>
+                    <img src="assets/img/github_icon.png" alt="" srcset="">
+                    <h3> WEB DESIGN E MOBILE</h3>
+                    <P>Nesciunt quam sit voluptates
+                        similique
+                        ex fugiat molestiae dolorum minima, a ab corporis
+                        rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
+                </article>
 
 
-                    <article>
-                        <img src="assets/img/github_icon.png">
-                        <h3>GERENCIAMENTO DE CONTEUDO</h3>
-                        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Nesciunt quam sit voluptates
-                            rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
-                    </article>
+                <article>
+                    <img src="assets/img/github_icon.png">
+                    <h3>ANALISE DE SOFTWERE</h3>
+                    <P> Nesciunt quam sit voluptates
+                        similique
+                        ex fugiat molestiae dolorum minima, a ab corporis
+                        rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
+                </article>
 
-                    <article>
-                        <img src="assets/img/github_icon.png">
-                        <h3>DESENVOLVIMENTO FRONT-END</h3>
-                        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Nesciunt quam sit voluptates
-                            similique
-                            ex fugiat molestiae dolorum minima, a ab corporis
-                        </P>
-                    </article>
 
-                    <article>
-                        <img src="assets/img/github_icon.png">
-                        <h3>DESENVOLVIMENTO FRONT-END</h3>
-                        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quam sit voluptates
-                            similique
-                            ex fugiat molestiae dolorum minima, a ab corporis
-                            rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
-                    </article>
+                <article>
+                    <img src="assets/img/github_icon.png">
+                    <h3>GERENCIAMENTO DE CONTEUDO</h3>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Nesciunt quam sit voluptates
+                        rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
+                </article>
 
-                </div>
+                <article>
+                    <img src="assets/img/github_icon.png">
+                    <h3>DESENVOLVIMENTO FRONT-END</h3>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Nesciunt quam sit voluptates
+                        similique
+                        ex fugiat molestiae dolorum minima, a ab corporis
+                    </P>
+                </article>
 
-            </section>
+                <article>
+                    <img src="assets/img/github_icon.png">
+                    <h3>DESENVOLVIMENTO FRONT-END</h3>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quam sit voluptates
+                        similique
+                        ex fugiat molestiae dolorum minima, a ab corporis
+                        rem odit facilis nulla, laborum aut dolor, quaerat vel.</P>
+                </article>
 
-            <section id="portfolio">
+            </div>
 
-                <h1>PORTFOLIO</h1>
+        </section>
 
-                <div class="portfolio">
+        <section id="portfolio">
 
-                    <div class="portfolio-item">
-                        <figure>
-                            <img src="assets/img/youtube3_icon.png" width="390" height="400">
-                        </figure data-animar="left">
-                        <article>
-                            <h3>TecUsual</h3>
-                            <p>
-                                Um saite de noticia sobre as novas
-                                tecnologia, noticia em muito mais...
-                            </p>
-                            <p>
-                                <strong>Tecnologias usadas</strong>: HTML,CSS,JS,PHP,MySQLI,
-                            </p>
-                            <div>
-                                <a href="">Saiba mais</a>
-                                <a href="http://">Visite o site</a>
-                            </div>
-                        </article>
-                    </div>
-                    <hr>
-                    <div class="portfolio-item">
+            <h1>PORTFOLIO</h1>
+
+            <div class="portfolio">
+
+                <div class="portfolio-item">
+                    <figure>
                         <img src="assets/img/youtube3_icon.png" width="390" height="400">
-                        <article>
-                            <h3>Dicionario Kimbundo</h3>
-                            <p>
-                                Um saite de noticia sobre as novas
-                                tecnologia, noticia em muito mais...
-                            </p>
-                            <p>
-                                <strong>Tecnologias usadas</strong>: HTML,CSS,JS,PHP,MySQLI,
-                            </p>
-                            <div>
-                                <a href="">Saiba mais</a>
-                                <a href="http://">Visite o site</a>
-                            </div>
-                        </article>
-                    </div>
-                    <hr>
-                    <div class="portfolio-item">
-                        <img src="assets/img/o1.jpg" width="390" height="400">
-                        <article>
-                            <h3>SportLive</h3>
-                            <p>
-                                Saiba tudo sobre  melhores noticias a previa dos jogos e os resultados
-                                final da sua liga favorita
-                            </p>
-                            <p>
-                                <strong>Tecnologias usadas</strong>:Flutter, Dart SQLITE
-                            </p>
-                            <div>
-                                <a href="">Saiba mais</a>
-                                <a href="http://">Baixar App</a>
-                            </div>
-                        </article>
-                    </div>
-                    <hr>
-                    <div class="portfolio-item">
-                        <img src="assets/img/facebook_icon.png" width="390" height="400">
-                        <article>
-                            <h3>ComercioTEC</h3>
-                            <p>
-                                Um saite de noticia sobre as novas
-                                tecnologia, noticia em muito mais...
-                            </p>
-                            <p>
-                                <strong>Tecnologias usadas</strong>: HTML,CSS,JS,PHP,MySQLI,
-                            </p>
-                            <div>
-                                <a href="">Saiba mais</a>
-                                <a href="http://">Visite o site</a>
-                            </div>
-                        </article>
-                    </div>
-
+                    </figure data-animar="left">
+                    <article>
+                        <h3>TecUsual</h3>
+                        <p>
+                            Um saite de noticia sobre as novas
+                            tecnologia, noticia em muito mais...
+                        </p>
+                        <p>
+                            <strong>Tecnologias usadas</strong>: HTML,CSS,JS,PHP,MySQLI,
+                        </p>
+                        <div>
+                            <a href="">Saiba mais</a>
+                            <a href="http://">Visite o site</a>
+                        </div>
+                    </article>
                 </div>
-            </section>
-
-            <section id="contacto">
-
-                <h2 class="titulo">CONTACTOS</h2>
-                <div>
-                    <p>
-                        Estou interessado em oportunidades freelance –
-                        especialmente projetos ambiciosos ou grandes.
-                        No entanto, se você tiver outra solicitação ou pergunta,
-                        não hesite em usar o formulário.
-                    </p>
-                    <form action="" method="post">
-
-                        <h2>Enviar Mensagem</h2>
-                        <p>Nome:</p>
-                        <input type="text" placeholder="Nome">
-                        <p>E-mail</p>
-                        <input type="email" placeholder="Email">
-                        <p>Mensagem</p>
-                        <textarea name="" id="" cols="60" rows="15"></textarea>
-                        <input class="button" type="submit" value="Enviar email">
-                    </form>
+                <hr>
+                <div class="portfolio-item">
+                    <img src="assets/img/youtube3_icon.png" width="390" height="400">
+                    <article>
+                        <h3>Dicionario Kimbundo</h3>
+                        <p>
+                            Um saite de noticia sobre as novas
+                            tecnologia, noticia em muito mais...
+                        </p>
+                        <p>
+                            <strong>Tecnologias usadas</strong>: HTML,CSS,JS,PHP,MySQLI,
+                        </p>
+                        <div>
+                            <a href="">Saiba mais</a>
+                            <a href="http://">Visite o site</a>
+                        </div>
+                    </article>
                 </div>
-            </section>
-
-            <section class="container-slides">
-
-                <div class="item-slides sldes1">
-                    <img src="assets/img/vai.png" alt="" width="1411" height="700">
-                    <a href=""></a>
+                <hr>
+                <div class="portfolio-item">
+                    <img src="assets/img/o1.jpg" width="390" height="400">
+                    <article>
+                        <h3>SportLive</h3>
+                        <p>
+                            Saiba tudo sobre melhores noticias a previa dos jogos e os resultados
+                            final da sua liga favorita
+                        </p>
+                        <p>
+                            <strong>Tecnologias usadas</strong>:Flutter, Dart SQLITE
+                        </p>
+                        <div>
+                            <a href="">Saiba mais</a>
+                            <a href="http://">Baixar App</a>
+                        </div>
+                    </article>
+                </div>
+                <hr>
+                <div class="portfolio-item">
+                    <img src="assets/img/facebook_icon.png" width="390" height="400">
+                    <article>
+                        <h3>ComercioTEC</h3>
+                        <p>
+                            Um saite de noticia sobre as novas
+                            tecnologia, noticia em muito mais...
+                        </p>
+                        <p>
+                            <strong>Tecnologias usadas</strong>: HTML,CSS,JS,PHP,MySQLI,
+                        </p>
+                        <div>
+                            <a href="">Saiba mais</a>
+                            <a href="http://">Visite o site</a>
+                        </div>
+                    </article>
                 </div>
 
-                <div class="item-slides slides2">
-                    <img src="assets/img/vai2.png" alt="" width="1411" height="700">
-                </div>
+            </div>
+        </section>
 
-                <div class="item-slides slides3">
-                    <img src="assets/img/meuambiente.png" alt="" width="1411" height="700">
-                </div>
+        <section id="contacto">
 
-            </section>
+            <h2 class="titulo">CONTACTOS</h2>
+            <div>
+                <p>
+                    Estou interessado em oportunidades freelance –
+                    especialmente projetos ambiciosos ou grandes.
+                    No entanto, se você tiver outra solicitação ou pergunta,
+                    não hesite em usar o formulário.
+                </p>
+                <form action="" method="post">
 
-        </main>
+                    <h2>Enviar Mensagem</h2>
+                    <p>Nome:</p>
+                    <input type="text" placeholder="Nome">
+                    <p>E-mail</p>
+                    <input type="email" placeholder="Email">
+                    <p>Mensagem</p>
+                    <textarea name="" id="" cols="60" rows="15"></textarea>
+                    <input class="button" type="submit" value="Enviar email">
+                </form>
+            </div>
+        </section>
 
-        <footer>
-            <div>Copyright © 2021 | Jose Calumbo</div>
-        </footer>
+        <section class="container-slides">
 
-        <!-- Inclui os arquivo JS-->
-        <script type="text/javascript" src="assets/js/slick/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="assets/js/slick/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+            <div class="item-slides sldes1">
+                <img src="assets/img/vai.png" alt="" width="1411" height="700">
+                <a href=""></a>
+            </div>
 
-        <script src="assets/js/script.js"></script>
+            <div class="item-slides slides2">
+                <img src="assets/img/vai2.png" alt="" width="1411" height="700">
+            </div>
 
-        <script type="text/javascript">
-            $('.carousel').slick({
+            <div class="item-slides slides3">
+                <img src="assets/img/meuambiente.png" alt="" width="1411" height="700">
+            </div>
 
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                dots: true,
-                // autoplay: true,
-                // autoplaySpeed: 900,
-                
-            });
-            </script>
-    </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>Copyright © 2021 | Jose Calumbo</div>
+    </footer>
+
+    <!-- Inclui os arquivo JS-->
+    <script type="text/javascript" src="assets/js/slick/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <script type="text/javascript">
+        $('.carousel').slick({
+
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            // autoplay: true,
+            // autoplaySpeed: 900,
+
+        });
+    </script>
 </body>
 
 </html>
