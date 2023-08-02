@@ -117,20 +117,36 @@ nav{
 
 /* ------------------- END HERO -------------- */ 
 
-.sobre{
-    display: grid;
-    grid-template-columns:150px 1fr;
-    height: 360px;
-    font-size: 16pt;
-    margin-top: 50px;
+/* ------------------- START ABOUT -------------- */ 
+
+.box-about{
+    background-color: #323131;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
 }
 
-.sobre div{
-    width: 600px;
-    margin-left: 0px;
-    text-align: justify;
-    margin: 30px;
+.box-text-about{
+    color: #ffffff;
+    width: 800px;
+    font-size:20px;
+    margin-top: 23px;
+    line-height: 32px;
+}
+
+.subtitulo{
+    text-transform: uppercase;
+    font-size:25px;
+    color: #2bb65a;
+}
+
+.about-skill{
+    color: #ffffff;
+    width: 800px;
+    font-size:20px;
+    line-height: 32px;
+    margin-top: 15px;
 }
 
 .contactar{

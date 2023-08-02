@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
   <div class="Content">
@@ -15,7 +14,7 @@
 
     <h2>Sub Título de exemplo para um vídeo no YouTube</h2>
 
-    <img src="github_icon.png" >
+    <img src="hero.jpg" width="300" height="400"/>
 
     <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
       e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma 
@@ -27,23 +26,24 @@
       a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
     </p>
   </div>
-  
   <button onclick="downloadPDF()" >Download</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
     function downloadPDF() {
-  const item = document.querySelector(".Content");
+          var item = document.querySelector(".Content");
 
-  var opt = {
-    margin: 1,
-    filename: "myfile12.pdf",
-    image:{ type: 'png', quality: 0.98 },
-    html2canvas:{ scale: 4 },
-    jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
-  };
+          var opt = {
+            margin: 1,
+            filename: "myfile1112.pdf",
+            image:{ type: 'jpeg', quality: 0.98 },
+            html2canvas:{ scale: 2},
+            jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+          };
 
-  html2pdf().set(opt).from(item).save();
-}
+          html2pdf().set(opt).from(item).save();
+          html2pdf(element, opt);
+  }
   </script>
 
 </body>
