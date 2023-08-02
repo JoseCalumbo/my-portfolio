@@ -21,11 +21,6 @@ html{
 	scroll-behavior: smooth;  
 }
 
-p{
-    color: rgb(255, 255, 255);
-}
-
-
 body, ul, li, p{
     list-style: none;
     font-family:'Lato', sans-serif;

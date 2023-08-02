@@ -24,7 +24,7 @@ nav{
     justify-content: end;
     align-items: center;
     height: 70px;
-    width: 65%;
+    width: 60%;
 }
 
 .menu{
@@ -42,7 +42,7 @@ nav{
 }
 .box-midia{
     display: flex;
-    width: 15%;
+    width: 20%;
     height: 70px;
     align-items: center;
 }
@@ -57,6 +57,11 @@ nav{
 
 .curriculo{
     margin-right: 10px;
+    padding: 4px 22px;
+    border-radius: 16px;
+    border: 1.3px solid #2bb65a;
+    cursor: pointer;
+
 } 
 
 /* ------------------- END CABEÇALHO -------------- */ 

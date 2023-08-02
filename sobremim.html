@@ -1,94 +1,50 @@
+
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <title>Jose Calumbo-Meu Portfólio</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-
 <body>
-    <div class="container">
+  <div class="Content">
+    <h1>Título do texto</h1>
 
-        <header class="header">
-            <a href="index.html">JOSE CALUMBO</a>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="#servico">SERVICOS</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTOS</a></li>
-                </ul>
-            </nav>
-        </header>
+    <h2>Sub Título de exemplo para um vídeo no YouTube</h2>
 
-        <main>
-            <section id="home">
-                <h2>Sobre MIM</h2>
-                <img src="assets/img/meuambiente.png" alt="" width="1411" height="700">
-            </section>
+    <img src="github_icon.png" >
 
-            <section>
-                <h2>SOBRE</h2>
-            </section>
+    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
+      e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma 
+      bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
+      Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a 
+      editoração eletrônica, permanecendo essencialmente inalterado. 
+      Se popularizou na década de 60, quando a Letraset lançou decalques 
+      contendo passagens de Lorem Ipsum, e mais recentemente quando passou 
+      a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+    </p>
+  </div>
+  
+  <button onclick="downloadPDF()" >Download</button>
 
-            <section id="servico">
-                <h2>SERVIÇOS</h2>
+  <script>
+    function downloadPDF() {
+  const item = document.querySelector(".Content");
 
-            </section>
+  var opt = {
+    margin: 1,
+    filename: "myfile12.pdf",
+    image:{ type: 'png', quality: 0.98 },
+    html2canvas:{ scale: 4 },
+    jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+  };
 
-            <section id="protfolio">
-                <h2>PORTFOLIO</h2>
-                <img src="assets/img/vai.png" alt="" width="111" height="700">
-            </section>
+  html2pdf().set(opt).from(item).save();
+}
+  </script>
 
-            <section class="section-contacto" id="contacto">
-
-                <h2>CONTACTOS</h2>
-
-                <div class="div-social">
-
-                    <a href="http://">
-                        <img src="assets/img/facebook_icon.png" width="64">
-                        <p>facebook</p>
-                    </a>
-                    <a href="http://"><img src="assets/img/youtube3_icon.png" width="64">
-                        <p>yutube</p>
-                    </a>
-
-                    <a href="http://"><img src="assets/img/nstagram_icon.png" width="64">
-                        <p>Instagram</p>
-                    </a>
-
-                    <a href="http://"><img src="assets/img/twitter_icon.png" width="64">
-                        <p>Twitter</p>
-                    </a>
-                </div>
-
-                <div>
-                    <form action="" method="post">
-                        <p>Mensagem</p>
-                        <input type="text" placeholder="Nome">
-                        <p>Mensagem</p>
-                        <input type="email" placeholder="Email">
-                        <p>Mensagem</p>
-                        <textarea name="" id="" cols="30" rows="5"></textarea>
-                        <input type="button" value="Enviar email">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div>Copyright © 2021 | Jose Calumbo</div>
-        </footer>
-
-    </div>
 </body>
-
 </html>

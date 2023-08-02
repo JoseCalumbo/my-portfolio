@@ -1,12 +1,20 @@
+const a = document.querySelector(".curriculo")
 
-let a = document.querySelector("#asd")
-
-addEventListener("click",as)
+a.addEventListener("click",as)
 
 function as(){
-  console.log(a);
-  console.log('ola');
-  alert("ola mundo");
+
+  const content = document.querySelector(".sobre1")
+
+  var options = {
+    margin: 1,
+    filename: "curriclo.pdf",
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+  };
+
+
+  html2pdf().set(options).from(content).save();
 }
 
 
