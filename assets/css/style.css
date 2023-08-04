@@ -149,6 +149,70 @@ nav{
     margin-top: 15px;
 }
 
+/* ------------------- START SKILLS -------------- */ 
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    height: 555px;
+    background-color: #323131;
+}
+
+.sub-titulo-skills{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 33px;
+
+}
+
+.slick-dots li button {
+    color: #2bb65a;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.item-carousel{
+    margin-left: 30px;
+    height: 320px;
+    background-color: #6e6d6d41;
+    text-align: center;
+    color: #f8f8f8;
+    border-radius: 10px;
+}
+.item-carousel > img{
+    margin-top: 15px;
+    position: relative;
+    width: 90px;
+    height: 100px;
+    left: 35%;
+}
+
+.item-carousel > h3{
+    margin:0 15px;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-transform: lowercase;
+    color: #48D978;
+}
+
+.item-carousel > p{
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    margin:0 15px;
+
+}
+
 .contactar{
     grid-column: 2;
     padding: 20px 50px;
@@ -230,7 +294,9 @@ nav{
 }
 
 .titulo{
-    color: rgba(16, 16, 150, 0.753);
+    text-align: center;
+    font-size: 52px;
+    color:#2bb65a
 }
 
 .button{

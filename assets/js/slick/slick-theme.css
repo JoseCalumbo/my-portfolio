@@ -140,8 +140,8 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 5px;
     padding: 0;
 
@@ -154,8 +154,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     padding: 5px;
 
     cursor: pointer;
@@ -185,14 +185,14 @@
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 
     content: '•';
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +200,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #2bb65a;
 }

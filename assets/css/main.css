@@ -42,14 +42,13 @@ a{
     cursor: pointer; 
 }
 
-img{
-    max-width: 100%;
-    display: block;
- }
-
 input{
     width: 500px;
     height: 40px;
     border: rgba(5, 5, 199, 0.315) solid 0.25px;
 }
 
+.imge{
+    
+    margin-left: 50%;
+}
