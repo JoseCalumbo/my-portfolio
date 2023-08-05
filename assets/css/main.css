@@ -48,7 +48,6 @@ input{
     border: rgba(5, 5, 199, 0.315) solid 0.25px;
 }
 
-.imge{
-    
-    margin-left: 50%;
+.img{
+    border-radius: 10px;
 }
