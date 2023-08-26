@@ -213,75 +213,33 @@ nav{
 
 }
 
-.contactar{
-    grid-column: 2;
-    padding: 20px 50px;
-    height:60px;
-    width: 270px;
-    border-radius: 28px;
-    border: rgba(72, 7, 225) solid 2px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(72, 7, 250);
-    font-size: 12pt;
-    font-weight: bold;
-    justify-self: start;
-    margin-bottom:20px;
-    text-align: center;
+/* ------------------- START PORTFOLIO -------------- */ 
+
+#portfolio{
+    padding-top: 25px;
+    color: #d40c0c;
+
 }
 
-.contactar:hover{
-    background-color: rgba(72, 7, 255);
-    transition: 1s ease;
-    color: rgb(255, 255, 255);
-}
-
-
-.container-servico{
+.box-portfolio{
     display: flex;
-    background-color: rgba(177, 177, 202, 0.973);
-    height: 450px;
-    width: 100%;
-    left: 0;
-    transition: all 1s ease;
+    width: 500px;
 }
 
-.container-servico article{
-    background: rgba(104, 102, 102, 0.267);
-    height: 200px;
-    margin-left: 50px;
-    margin-right: 60px;
-}
-
-.container-servico article h3{
-    color: blue;
-}
-
-.portfolio > div{
-    margin-top: 5px;
-    height: 450px;
-}
 .portfolio-item{
-    display:flex;
-    justify-content: space-around;
-    margin: 10px 0;
-}
-.portfolio-item article h3{
-    margin: 40px 0;
-}
-.portfolio-item >article a{
-    border-radius: 28px;
-    border: rgba(72, 8, 248, 0.603) solid 1.5px;
-    padding: 20px 50px;
-    font-size: 12pt;
-    font-weight: bold;
+    border-radius: 15px;
     margin: 0 10px;
-    color: rgb(71, 8, 250);
 }
-.portfolio-item > article a:hover{
-    background-color: rgb(71, 7, 255);
-    color: rgb(255, 248, 248);
-    transition: 1s;
+
+/* ---host site -------------- */ 
+.hostsite{
+    color: #48D978;
+    height: 550px;
+    background-size: cover;
+    background-image: url(hero.jpg);
 }
+
+/* ------------------- START CONTACTO -------------- */ 
 
 #contacto div{
     display: flex;
@@ -294,6 +252,7 @@ nav{
 }
 
 .titulo{
+    letter-spacing:3px;
     text-align: center;
     font-size: 52px;
     color:#2bb65a
@@ -320,6 +279,7 @@ nav{
     border-radius: 100%;
 }
 
+/* ------------------- START SLIDES -------------- */ 
 .container-slides{
     max-width: 100%;
     position: relative;
@@ -366,7 +326,6 @@ nav{
 }
 
 footer {
-    position: absolute;
     background-color:#323131;
     color: #fffdfd;
     padding: 30px;
@@ -389,4 +348,15 @@ footer {
 
 [data-animar].anime{
     opacity: 1;
+}
+
+
+#mais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-image: url(assets/img/vai2.png);
 }

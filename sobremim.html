@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,43 +8,78 @@
   <title>Document</title>
 
 </head>
+
 <body>
   <div class="Content">
     <h1>Título do texto</h1>
 
     <h2>Sub Título de exemplo para um vídeo no YouTube</h2>
 
-    <img src="hero.jpg" width="300" height="400"/>
+    <img src="hero.jpg" width="300" height="400" />
 
-    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
-      e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma 
-      bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
-      Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a 
-      editoração eletrônica, permanecendo essencialmente inalterado. 
-      Se popularizou na década de 60, quando a Letraset lançou decalques 
-      contendo passagens de Lorem Ipsum, e mais recentemente quando passou 
+    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos,
+      e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma
+      bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+      Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a
+      editoração eletrônica, permanecendo essencialmente inalterado.
+      Se popularizou na década de 60, quando a Letraset lançou decalques
+      contendo passagens de Lorem Ipsum, e mais recentemente quando passou
       a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
     </p>
   </div>
-  <button onclick="downloadPDF()" >Download</button>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <button onclick="downloadPDF()">Download</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
     function downloadPDF() {
-          var item = document.querySelector(".Content");
+      var item = document.querySelector(".Content");
 
-          var opt = {
-            margin: 1,
-            filename: "myfile1112.pdf",
-            image:{ type: 'jpeg', quality: 0.98 },
-            html2canvas:{ scale: 2},
-            jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
-          };
+      var opt = {
+        margin: 1,
+        filename: "myfile1112.pdf",
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+      };
 
-          html2pdf().set(opt).from(item).save();
-          html2pdf(element, opt);
-  }
+      html2pdf().set(opt).from(item).save();
+      html2pdf(element, opt);
+    }
   </script>
 
+  <section class="container-slides">
+
+    <div class="item-slides sldes1">
+      <img src="assets/img/vai.png" alt="" width="141" height="700">
+      <a href=""></a>
+    </div>
+
+    <div class="item-slides slides2">
+      <img src="assets/img/vai2.png" alt="" width="141" height="700">
+    </div>
+
+    <div class="item-slides slides3">
+      <img src="assets/img/meuambiente.png" alt="" width="141" height="700">
+    </div>
+
+  </section>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Dolor, ab veniam temporibus quos cumque hic quaerat magnam,
+     similique a, molestias totam. Asperiores
+     ullam accusamus optio at, beatae id. Ipsum, culpa.
+    </p>
+
+  <div class="mais">
+
+  </div>
+  <header id="mais">
+
+  </header>
+
 </body>
+
 </html>
