@@ -166,7 +166,14 @@ nav{
     font-size: 28px;
     margin-top: 5px;
     margin-bottom: 33px;
+}
 
+.sub-titulo-skills1{
+    color: rgb(19, 80, 0);
+    text-align: center;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 33px;
 }
 
 .slick-dots li button {
@@ -216,20 +223,33 @@ nav{
 /* ------------------- START PORTFOLIO -------------- */ 
 
 #portfolio{
+    display: flex;
+    flex-direction: column;
     padding-top: 25px;
-    color: #d40c0c;
+    padding-bottom: 60px;
+    align-items: center;
+    background-color: hsla(207, 19%, 12%, 0.995);
 
 }
 
 .box-portfolio{
-    display: flex;
-    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 88%;
 }
 
-.portfolio-item{
+.portfolio-item > img{
+    width: 600px;
+    height: 400px;
     border-radius: 15px;
-    margin: 0 10px;
-}
+    margin: 3px;
+    border: #1d1c1c50 1px solid;
+}  
+.portfolio-item > img{
+
+}  
+
+
 
 /* ---host site -------------- */ 
 .hostsite{
