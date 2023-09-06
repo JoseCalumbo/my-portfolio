@@ -258,6 +258,42 @@ nav{
     background-size: cover;
     background-image: url(hero.jpg);
 }
+/* ------------------- START PORTFOLIO -------------- */ 
+#artigo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    align-items: center;
+    background-color: hsla(207, 19%, 12%, 0.995);
+}
+
+.box-artigo{
+    width: 100%;
+    display: flex;
+}
+
+.artigo-item{
+margin: 0 20px;}
+
+.artigo-item > img{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.categoria{
+    color: #fffdfd;
+}
+
+.titulo-artigo{
+    color: #2bb65a;
+}
+
+.conteudo-artigo{
+    width: 340px;
+    color: #f8f8f8;
+}
 
 /* ------------------- START CONTACTO -------------- */ 
 
