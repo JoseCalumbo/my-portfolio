@@ -148,75 +148,111 @@
 
         <div class="box-portfolio">
 
-            <div class="portfolio-item  div1">
-                <img src="assets/img/card1.png" />
-            </div>
-            
             <div class="portfolio-item">
-                <img  src="assets/img/card2.png" />
+                <img src="assets/img/card1.png" />
+                <div class="info-projecto">
+                    <h4>Gestor de eventos</h4>
+                    <p>Escrevo sobre a construção de produto</p>
+                    <span class="n1">Java</span>
+                    <span>Mysql</span>
+                    <span>Typescript</span>
+                </div>
             </div>
-            
+
+            <div class="portfolio-item">
+                <img src="assets/img/card2.png" />
+                <div class="info-projecto ver">
+                    <h4>Gestor de eventos</h4>
+                    <p>Escrevo sobre a construção de produto
+                        sobre a construção de produto </p>
+                    <span class="n1">React Native</span>
+                    <span>React</span>
+                    <span>Typescript</span>
+                    <span>SCSS</span>
+                </div>
+            </div>
+
             <div class="portfolio-item">
                 <img src="assets/img/card3.png" />
+                <div class="info-projecto ver">
+                    <h4>Gestor de eventos</h4>
+                    <p>Escrevo sobre a construção de produto construção de produto</p>
+                    <span class="n1">Java</span>
+                    <span>SCSS</span>
+                    <span>Typescript</span>
+                    <span>Flutter</span>
+                    <span class=>SQLite</span>
+                </div>
             </div>
-            
-            <div class="portfolio-item div2 ">
+
+            <div class="portfolio-item">
                 <img src="assets/img/card4.png" />
+                <div class="info-projecto">
+                    <h4>Gestor de eventos</h4>
+                    <p>Escrevo sobre a construção de produto</p>
+                    <span class="n1">PHP</span>
+                    <span>HTML</span>
+                    <span class=>JavaScript</span>
+                    <span>CSS</span>
+                    <span>Bootstrap</span>
+                </div>
             </div>
-                
+
         </div>
 
         <div>
-            <a href="http://">Mais projectos</a>
+            <a href="http://" >Mais projectos</a>
         </div>
     </section>
 
- <!-- ---         START PORTFOLIO  ----------  -->
- <section id="artigo">
+    <!-- ---         START PORTFOLIO  ----------  -->
+    <section id="artigo">
 
-    <h1 class="titulo">Artigos Em destaques</h1>
-    <p class="sub-titulo-skills">
-        Se você precisa de um site, aplicativo, essas são as minhas qualificações!
-    </p>
+        <h1 class="titulo">Artigos Em destaques</h1>
+        <p class="sub-titulo-skills">
+            Se você precisa de um site, aplicativo, essas são as minhas qualificações!
+        </p>
 
-    <div class="box-artigo">
+        <div class="box-artigo">
 
-        <div class="artigo-item  div1">
-            <img src="assets/img/card1.png" />
-            <h5 class="categoria">Carreira</h5>
-            <div class="titulo-artigo">Opinião sobre Linux </div>
-            <p class="conteudo-artigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ratione, laudantium eius labore, atque earum esse dolores
-                sapiente fugit eaque rem 
-            </p>
+            <div class="artigo-item  div1">
+                <img src="assets/img/card1.png" />
+                <h5 class="categoria">Carreira</h5>
+                <div class="titulo-artigo">Opinião sobre Linux </div>
+                <p class="conteudo-artigo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione, laudantium eius labore, atque earum esse dolores
+                    sapiente fugit eaque rem
+                </p>
+            </div>
+
+            <div class="artigo-item">
+                <img src="assets/img/card2.png" />
+                <h5 class="categoria">Carreira</h5>
+                <div class="titulo-artigo">Opinião sobre Linux </div>
+                <p class="conteudo-artigo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione, laudantium eius labore, atque earum esse dolores
+                    sapiente fugit eaque rem
+                </p>
+            </div>
+
+            <div class="artigo-item">
+                <img src="assets/img/card3.png" />
+                <h5 class="categoria">Carreira</h5>
+                <div class="titulo-artigo">Opinião sobre Linux </div>
+                <p class="conteudo-artigo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione, laudantium eius labore, atque earum esse dolores
+                    sapiente fugit eaque rem
+                </p>
+            </div>
+
         </div>
-        
-        <div class="artigo-item">
-            <img  src="assets/img/card2.png" />
-            <h5 class="categoria">Carreira</h5>
-            <div class="titulo-artigo">Opinião sobre Linux </div>
-            <p class="conteudo-artigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ratione, laudantium eius labore, atque earum esse dolores
-                sapiente fugit eaque rem 
-            </p>
-        </div>
-        
-        <div class="artigo-item">
-            <img src="assets/img/card3.png" />
-            <h5 class="categoria">Carreira</h5>
-            <div class="titulo-artigo">Opinião sobre Linux </div>
-            <p class="conteudo-artigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ratione, laudantium eius labore, atque earum esse dolores
-                sapiente fugit eaque rem 
-            </p>
-        </div>
-            
-    </div>
 
-    <div>
-        <a href="http://">Mais artigos</a>
-    </div>
-</section>
+        <div>
+            <a href="http://">Mais artigos</a>
+        </div>
+    </section>
+
+    <!-- ---         START PORTFOLIO  ----------  -->
     <section id="contacto">
 
         <h2 class="titulo">CONTACTOS</h2>
@@ -255,6 +291,7 @@
     <script src="assets/js/curriculo.js"></script>
 
     <script type="text/javascript">
+
         $('.carousel').slick({
 
             infinite: true,
@@ -263,8 +300,24 @@
             dots: true,
             // autoplay: true,
             // autoplaySpeed: 900,
-
         });
+
+        const port = document.querySelectorAll(".portfolio-item")
+        const desc = document.querySelector('.info-projecto')
+
+        port.forEach(box => {
+            box.addEventListener('mouseenter', entrar);
+        });
+
+        function entrar() {
+            console.log("entrar");
+        }
+
+        function sair() {
+            console.log("sair");
+        }
+
+
     </script>
 
 </body>

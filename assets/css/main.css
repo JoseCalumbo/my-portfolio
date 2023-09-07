@@ -51,3 +51,11 @@ input{
 .img{
     border-radius: 10px;
 }
+
+/* ---host site -------------- */ 
+.hostsite{
+    color: #48D978;
+    height: 550px;
+    background-size: cover;
+    background-image: url(hero.jpg);
+}

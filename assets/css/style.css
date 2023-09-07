@@ -229,13 +229,16 @@ nav{
     padding-bottom: 60px;
     align-items: center;
     background-color: hsla(207, 19%, 12%, 0.995);
-
 }
 
 .box-portfolio{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 88%;
+}
+.portfolio-item{
+    display: grid;
+    margin: 3px;
 }
 
 .portfolio-item > img{
@@ -244,20 +247,43 @@ nav{
     border-radius: 15px;
     margin: 3px;
     border: #1d1c1c50 1px solid;
+
+    grid-column: 1;
+    grid-row: 1/4;
 }  
-.portfolio-item > img{
 
-}  
-
-
-
-/* ---host site -------------- */ 
-.hostsite{
-    color: #48D978;
-    height: 550px;
-    background-size: cover;
-    background-image: url(hero.jpg);
+.info-projecto{
+    border-radius: 15px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    grid-column: 1;
+    grid-row: 3;
+    color: #fffdfd;
+    background-color: rgba(0, 0, 0, 0.503);
+    width: 602px;
 }
+
+.info-projecto p,h4 {
+    margin-bottom: 20px;
+    margin-left:25px;
+}
+.info-projecto .n1{
+    margin-left: 25px;
+}
+
+.info-projecto span{
+    height: 5px;
+    margin-top: 5px;
+    color: #f8f8f8;
+    padding: 5px 10px;
+    background-color: #48d978b8;
+    border-radius: 15px;
+}
+
+.ver{
+    display: none;
+}
+
 /* ------------------- START PORTFOLIO -------------- */ 
 #artigo{
     display: flex;
@@ -265,7 +291,7 @@ nav{
     padding-top: 25px;
     padding-bottom: 60px;
     align-items: center;
-    background-color: hsla(207, 19%, 12%, 0.995);
+    background-color: hsla(207, 18%, 12%, 0.857);
 }
 
 .box-artigo{
