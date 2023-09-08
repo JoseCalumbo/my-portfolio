@@ -150,6 +150,7 @@
 
             <div class="portfolio-item">
                 <img src="assets/img/card1.png" />
+
                 <div class="info-projecto">
                     <h4>Gestor de eventos</h4>
                     <p>Escrevo sobre a construção de produto</p>
@@ -161,7 +162,8 @@
 
             <div class="portfolio-item">
                 <img src="assets/img/card2.png" />
-                <div class="info-projecto ver">
+
+                <div class="info-projecto">
                     <h4>Gestor de eventos</h4>
                     <p>Escrevo sobre a construção de produto
                         sobre a construção de produto </p>
@@ -174,7 +176,8 @@
 
             <div class="portfolio-item">
                 <img src="assets/img/card3.png" />
-                <div class="info-projecto ver">
+
+                <div class="info-projecto">
                     <h4>Gestor de eventos</h4>
                     <p>Escrevo sobre a construção de produto construção de produto</p>
                     <span class="n1">Java</span>
@@ -187,6 +190,7 @@
 
             <div class="portfolio-item">
                 <img src="assets/img/card4.png" />
+
                 <div class="info-projecto">
                     <h4>Gestor de eventos</h4>
                     <p>Escrevo sobre a construção de produto</p>
@@ -201,7 +205,7 @@
         </div>
 
         <div>
-            <a href="http://" >Mais projectos</a>
+            <a href="http://">Mais projectos</a>
         </div>
     </section>
 
@@ -277,7 +281,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer onmouseout="">
         <div>Copyright © 2021 | Jose Calumbo</div>
     </footer>
 
@@ -302,19 +306,31 @@
             // autoplaySpeed: 900,
         });
 
-        const port = document.querySelectorAll(".portfolio-item")
-        const desc = document.querySelector('.info-projecto')
+        var port = document.querySelectorAll(".portfolio-item")
+        var desc = document.querySelector('.info-projecto')
 
         port.forEach(box => {
             box.addEventListener('mouseenter', entrar);
+            box.addEventListener('mouseout', sair);
+
         });
 
+
         function entrar() {
+            // desc.forEach(d => {
+            //     if (box) {
+            //         d.classList.add("ver")
+            //     }
+
+            // })
+            desc.classList.add("ver")
             console.log("entrar");
         }
 
         function sair() {
             console.log("sair");
+            desc.classList.remove("ver")
+
         }
 
 
