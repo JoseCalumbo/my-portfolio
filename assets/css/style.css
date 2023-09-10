@@ -284,6 +284,29 @@ nav{
 
 .ver{
     display: block;
+    animation-name: mostrar-desc;
+    animation-duration: 2s;
+}
+
+@keyframes mostrar-desc{
+    0%{
+        opacity: 0;
+
+    }
+    30%{
+        opacity: 0.4;
+        background-color: #48bcd9;
+
+    }
+    50%{
+        opacity: 0.6;
+        background-color: #48D978;
+
+    }
+    100%{
+        opacity: 1;
+
+    }
 }
 
 /* ------------------- START PORTFOLIO -------------- */ 
