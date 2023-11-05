@@ -1,19 +1,14 @@
+var botao = document.querySelector(".btn");
+var menu = document.querySelector(".menu");
+var srcImg = document.querySelector(".img-menu")
 
+botao.addEventListener('click',abrirMenu);
 
-const card = document.querySelectorAll('[data-animar]');
-
-const classAnime = 'anime';
-
-function animarScroll(){
-    const posicaScroll = window.pageYOffset + 500;
-    card.forEach(function(e){
-        if(posicaScroll > e.offsetTop){
-            e.classList.add(classAnime);
-        }
-        console.log(e.offsetTop);
-    })
+function abrirMenu (){
+    if ( menu.classList.toggle("activar")) {
+        srcImg.src="assets/img/close.svg"
+    } else {
+        srcImg.src="assets/img/menu.svg"
+    }
 }
 
-window.addEventListener('scroll',function(){
-    animarScroll();
-})

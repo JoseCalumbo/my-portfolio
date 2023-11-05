@@ -1,30 +1,23 @@
 /* -------------- START CABEÇALHO ------------------- */  
 
-nav > a li p div{
-    color: #48D978;
-}
-
-nav{
+.header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: hsla(207, 19%, 12%, 0.995);
     border-bottom: 0.5px solid #48d97838;
+    height: 70px;
+}
+
+.box-btn {
+    display: none;
+    margin-right: 30px;
 }
 
 .box-logo {
     display: flex;
-    justify-content: start;
-    width: 20%;
-    height: 70px;
-    justify-content: center;
     align-items: center;
-}
-
-.box-menu {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 70px;
-    width: 60%;
+    margin-left: 50px;
 }
 
 .menu{
@@ -53,18 +46,21 @@ nav{
 }
 .menu-midia{
     display: flex;
+    align-items: center;
 }
 
-.curriculo{
+.curriculo > a{
+    background-color: #2bb65a;
     margin-right: 10px;
-    padding: 4px 22px;
+    padding: 5px 5px;
     border-radius: 16px;
-    border: 1.3px solid #2bb65a;
+    border: 1.3px solid #000000;
     cursor: pointer;
+    color: #000000;
+    font-weight: 900;
 
 } 
 
-/* ------------------- END CABEÇALHO -------------- */ 
 
 /* ------------------- START HERO -------------- */
 .hero{
@@ -115,7 +111,6 @@ nav{
     border: 1px solid #48D97870;
 }
 
-/* ------------------- END HERO -------------- */ 
 
 /* ------------------- START ABOUT -------------- */ 
 
@@ -229,6 +224,7 @@ nav{
     padding-bottom: 60px;
     align-items: center;
     background-color: hsla(207, 19%, 12%, 0.995);
+    width: 100%;
 }
 
 .box-portfolio{
@@ -309,7 +305,7 @@ nav{
     }
 }
 
-/* ------------------- START PORTFOLIO -------------- */ 
+/* ------------------- START artigos -------------- */ 
 #artigo{
     display: flex;
     flex-direction: column;
@@ -352,6 +348,8 @@ margin: 0 20px;}
     display: flex;
     color: rgb(22, 21, 21);
     background-color: rgb(242, 243, 239);
+    width: 100%;
+
 }
 
 #contacto div p{
@@ -362,7 +360,7 @@ margin: 0 20px;}
     letter-spacing:3px;
     text-align: center;
     font-size: 52px;
-    color:#2bb65a
+    color:rgb(43, 182, 90)
 }
 
 .button{
@@ -466,4 +464,57 @@ footer {
     text-align: center;
     background-size: cover;
     background-image: url(assets/img/vai2.png);
+}
+
+/* ------------------- START CSS RESPONSIVOS-------------- */
+
+@media screen and (max-width: 600px){
+    .header{
+        height: 55px;
+    }
+
+    .box-logo {
+        align-items: center;
+        margin-left: 20px;
+    }
+    .box-logo > a > img {
+        width:45px;
+        height: 35px;
+    }
+
+    .box-btn{
+        display: block;
+
+    }
+
+    .box-btn > button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .activar{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: 55px;
+        background-color: #000000b9;
+        z-index: 10;
+    }
+
+    .menu-item{
+        width: 100%;
+        padding: 7px 0px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.329);
+    }
+
+    .menu-item > a{
+        margin-left: 20px;
+        color: #ffffff;
+    }
 }
