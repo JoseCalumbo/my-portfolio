@@ -505,6 +505,7 @@ footer {
         top: 55px;
         background-color: #000000b9;
         z-index: 10;
+        height: 100%;
     }
 
     .menu-item{
